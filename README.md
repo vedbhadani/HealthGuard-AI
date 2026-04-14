@@ -1,46 +1,226 @@
-# HealthGuard-AI: Intelligent Patient Risk Assessment System 🏥 (Milestone 1)
+# 🏥 HealthGuard-AI
+### Agentic AI-Based Health Support System using ML + RAG
 
-## Problem Understanding & Healthcare Use-Case
-Diabetes is a chronic disease that affects millions of people globally and can lead to severe health complications if not properly managed. Early diagnosis and proactive intervention are critical. The objective of the **Intelligent Patient Risk Assessment System** is to build a machine learning model capable of predicting the onset of diabetes based on diagnostic measurements. By providing a quick, accessible risk assessment tool, this system empowers patients and enables healthcare professionals to identify high-risk individuals early.
+---
 
-## Dataset
-The dataset used is the [Pima Indians Diabetes Database](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database). It contains clinical data designed diagnostically to predict whether a patient has diabetes based on several physiological measurements.
+## 🚀 Overview
 
-## Input-Output Specification
-### Model Inputs (Features)
-The system accepts structured clinical diagnostic data including:
-- **Pregnancies**: Number of times pregnant
-- **Glucose**: Plasma glucose concentration (2 hours in an oral glucose tolerance test)
-- **Blood Pressure**: Diastolic blood pressure (mm Hg)
-- **Skin Thickness**: Triceps skinfold thickness (mm)
-- **Insulin**: 2-Hour serum insulin (mu U/ml)
-- **BMI**: Body mass index (weight in kg/(height in m)^2)
-- **Diabetes Pedigree Function**: A synthesized metric scoring diabetes likelihood based on family history
-- **Age**: Patient's age in years
+HealthGuard-AI is an intelligent healthcare analytics system that combines Machine Learning (ML), Agentic AI, and Retrieval-Augmented Generation (RAG) to provide structured and explainable health insights.
 
-### System Outputs
-- **Risk Score**: The predicted predictive probability (0-100%) indicating the likelihood of diabetes.
-- **Risk Category**: Actionable health categorization into Low, Moderate, or High risk.
-- **Top Contributing Factors**: The system natively extracts and explains the top 3 specific diagnostic features raising or reducing the patient's individual calculated risk in real time.
+The system analyzes patient clinical data, predicts health risks, and generates evidence-based recommendations through an interactive interface.
 
+---
 
-## Model Performance Analysis
-The selected ML model is **Logistic Regression**. It was deemed ideal due to its interpretability compared to opaque neural networks and clear decision boundaries on binary classification sets. 
-- **Preprocessing:** Incorrect or missing zero-values in biological features (e.g., Blood Pressure, Glucose) were imputed with sequence medians, substantially improving data integrity. 
-- **Performance Evaluation:** The model was tested on a 20% holdout test dataset. Accuracy and strictly evaluated ROC-AUC scores dynamically generated during the compilation phase show significant reliability in successfully classifying positive instances of diabetes risk versus negative ones.
+## 🎯 Objective
 
-## Running the Application Locally
-1. Ensure Python 3.8+ is installed locally.
-2. Install the application's required libraries:
-   ```bash
-   pip install pandas numpy scikit-learn streamlit joblib
-   ```
-3. Execute the training script to fetch the `.csv` data, train the model, and create the necessary predictive binaries:
-   ```bash
-   python model_training.py
-   ```
-4. Run the interactive Streamlit user-interface:
-   ```bash
-   streamlit run app.py
-   ```
-5. Open your browser to the local URL provided by Streamlit to query health predictions.
+The goal of this project is to:
+
+- Predict patient health risks using structured clinical data
+- Explain the reasoning behind predictions
+- Retrieve relevant medical knowledge from trusted sources
+- Generate structured, non-clinical health guidance
+- Provide an interactive chat-based assistant for follow-up queries
+
+---
+
+## 🧠 Key Features
+
+### ML-Based Risk Prediction
+- Predicts disease risk using supervised learning models
+- Supports models like Logistic Regression and Decision Trees
+
+### Explainable Insights
+- Highlights key contributing health factors
+- Improves interpretability of predictions
+
+### Agentic AI Workflow
+- Built using LangGraph
+- Uses modular tools:
+  - Risk Analyzer
+  - Knowledge Retriever
+  - Report Generator
+
+### Retrieval-Augmented Generation (RAG)
+- Enhances responses using external medical knowledge
+- Uses vector search with FAISS and embeddings
+
+### Interactive Chat Interface
+- Allows users to ask follow-up health questions
+- Provides context-aware responses
+
+### Structured Health Reports
+Each generated report includes:
+- Risk summary
+- Key contributing factors
+- Recommendations
+- Sources
+- Medical disclaimer
+
+### PDF Export (Extension)
+- Downloadable health reports for better usability
+
+---
+
+## 🏗️ System Architecture
+
+User Input (CSV / Report / Chat)  
+↓  
+Data Processing Layer  
+↓  
+ML Risk Prediction Model  
+↓  
+Agentic AI Layer (LangGraph)  
+↙        ↓        ↘  
+Retriever  Reasoner  Report Generator  
+↓                     ↓  
+Vector DB (FAISS)   Structured Output  
+↓  
+Streamlit UI  
+
+---
+
+## 📥 Input
+
+- Patient data (CSV or extracted report data)
+  - Age
+  - Vital signs
+  - Lab values
+  - Medical history
+
+---
+
+## 📤 Output
+
+Example structured report:
+
+{
+  "risk_summary": "Moderate risk of cardiovascular disease",
+  "key_contributing_factors": [
+    "High cholesterol",
+    "Elevated blood pressure"
+  ],
+  "recommendations": [
+    "Increase physical activity",
+    "Reduce salt intake"
+  ],
+  "sources": [
+    "WHO guidelines",
+    "CDC resources"
+  ],
+  "disclaimer": "This system provides non-clinical guidance only."
+}
+
+---
+
+## 🛠️ Tech Stack
+
+### Machine Learning
+- scikit-learn
+- pandas
+- NumPy
+
+### LLM & Agent Framework
+- LangGraph
+- Open-source LLMs (Hugging Face / Groq)
+
+### RAG Components
+- FAISS (vector database)
+- SentenceTransformers (embeddings)
+
+### Frontend
+- Streamlit
+
+### Deployment
+- Hugging Face Spaces
+- Streamlit Community Cloud
+
+---
+
+## 🔄 Workflow
+
+1. Upload patient data  
+2. Preprocess and clean data  
+3. Predict risk using ML model  
+4. Agent:
+   - Analyzes risk
+   - Retrieves relevant medical knowledge
+   - Generates structured report  
+5. User interacts via chat for further insights  
+
+---
+
+## 📊 Evaluation Metrics
+
+### ML Model
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+
+### System-Level
+- Explanation quality
+- Retrieval relevance
+- Hallucination reduction
+
+---
+
+## ⚠️ Disclaimer
+
+This system is intended for educational and informational purposes only.  
+It does NOT provide medical advice, diagnosis, or treatment.  
+Always consult a qualified healthcare professional.
+
+---
+
+## 📌 Constraints Followed
+
+- No paid APIs used  
+- Only open-source or free-tier tools used  
+- Includes a user interface  
+- Deployable on public platforms  
+
+---
+
+## 🌐 Deployment
+
+Add your deployed link here
+
+---
+
+## 🎥 Demo
+
+Add demo video link here
+
+---
+
+## 📂 Repository Structure
+
+HealthGuard-AI/
+│
+├── data/                  # Dataset  
+├── models/                # Trained ML models  
+├── rag/                   # RAG pipeline  
+├── agent/                 # LangGraph workflows  
+├── ui/                    # Streamlit app  
+├── utils/                 # Helper functions  
+├── app.py                 # Main entry point  
+└── README.md  
+
+---
+
+## 👥 Team
+
+- Member 1  
+- Member 2  
+- Member 3  
+
+---
+
+## 🏁 Conclusion
+
+HealthGuard-AI demonstrates how Machine Learning, Agentic AI, and Retrieval-Augmented Generation can be combined to create a healthcare system that is:
+
+- Predictive  
+- Explainable  
+- Interactive  
+- Knowledge-driven  
