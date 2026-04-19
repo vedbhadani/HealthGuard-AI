@@ -1,0 +1,75 @@
+DIABETES PREVENTION GUIDELINES
+
+Primary Prevention Strategies:
+1. Lifestyle Modification
+   - Weight loss: 5-7% of body weight can reduce diabetes risk by 58%
+   - Physical activity: 150 minutes per week of moderate-intensity exercise
+   - Dietary changes: Reduce refined carbohydrates, increase fiber intake
+   - Smoking cessation: Smoking increases insulin resistance
+
+2. Dietary Recommendations
+   - Mediterranean diet pattern shown to reduce diabetes incidence by 52%
+   - Low glycemic index foods help maintain stable blood glucose
+   - Portion control using 9-inch plates
+   - Limit sugary beverages to <1 serving per week
+   - Increase vegetables to 5+ servings daily
+
+3. Physical Activity Guidelines
+   - Aerobic exercise: 150 minutes/week moderate intensity (brisk walking, cycling)
+   - Resistance training: 2 sessions per week
+   - Reduce sedentary time: Stand up every 30 minutes
+   - Exercise improves insulin sensitivity for 24-48 hours post-activity
+
+4. Weight Management
+   - BMI target: 18.5-24.9 kg/m²
+   - Waist circumference: <35 inches women, <40 inches men
+   - Even modest weight loss (5-10%) significantly improves insulin sensitivity
+   - Gradual weight loss (1-2 lbs/week) more sustainable than rapid loss
+
+5. Monitoring and Screening
+   - Fasting glucose check every 3 years if normal risk
+   - Annual screening if prediabetic (A1C 5.7-6.4%)
+   - Blood pressure monitoring: <130/80 mmHg target
+   - Lipid panel annually: LDL <100 mg/dL target
+
+Evidence Base:
+- Diabetes Prevention Program (DPP): Lifestyle intervention reduced diabetes incidence by 58% vs metformin (31%)
+- Finnish Diabetes Prevention Study: 5% weight loss + exercise reduced risk by 58%
+- Look AHEAD trial: Intensive lifestyle intervention improved A1C, weight, and fitness
+
+Risk Factors:
+- Age >45 years
+- BMI >25 kg/m²
+- Family history of diabetes
+- Physical inactivity
+- History of gestational diabetes
+- Hypertension (>140/90 mmHg)
+- Dyslipidemia (HDL <35, TG >250)
+- Prediabetes (impaired fasting glucose or A1C 5.7-6.4%)
+
+Warning Signs:
+- Increased thirst
+- Frequent urination
+- Unexplained weight loss
+- Fatigue
+- Blurred vision
+- Slow-healing sores
+- Frequent infections
+
+Medication Considerations:
+- Metformin first-line for high-risk prediabetes
+- Consider GLP-1 agonists for obese patients with prediabetes
+- Statin therapy for cardiovascular risk reduction
+- ACE inhibitors for hypertension in diabetic patients
+
+Follow-up Schedule:
+- Initial visit: Comprehensive assessment
+- 3-month follow-up: Check progress, adjust plan
+- 6-month follow-up: Reassess risk factors
+- Annual: Full metabolic panel, complications screening
+
+Complications Prevention:
+- Annual eye exams (retinopathy screening)
+- Annual urine microalbumin (nephropathy screening)
+- Annual comprehensive foot exam (neuropathy screening)
+- Cardiovascular risk assessment every visit
